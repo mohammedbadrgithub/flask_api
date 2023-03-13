@@ -32,9 +32,9 @@ def notFoundPage(error):
 @myapp.route('/admin')
 def admin():
     admin={
-        "name":"Dina",
-        "age":23,
-        "track":"Open Source"
+        "name":"Mohammed",
+        "age":28,
+        "track":"Python_Track"
     }
     return render_template("admin.html", admin=admin)
 
