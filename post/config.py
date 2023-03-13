@@ -13,7 +13,7 @@ class DevelopmentConfigration(Config):
 class ProductionConfigration(Config):
     DEBUG= False
     # postgresql:://username:password@localhost:portnumber/dbname
-    SQLALCHEMY_DATABASE_URI = "postgresql://zezo:iti@localhost:5432/menia_flask"
+    SQLALCHEMY_DATABASE_URI = "postgresql://postgres:123@localhost:5432/menia_flask"
 
 
 
