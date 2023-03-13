@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+{% block content %}
+<style>
+  body{
+    background-color: #DDD ;
+  }
+  .image{
+    padding: 0 30px 0 30px;
+    width: 980px;
+  }
+</style>
+  <div class="col-md-12">
+        <div class="w-100 mt-2 ms-5 ">
+            <img class="image" src="{{url_for('static', filename='images/back.jpg')}}">
+        </div>
+  </div>
+{%endblock content%}

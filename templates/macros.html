@@ -1,0 +1,15 @@
+{% macro showContent(x) %}
+
+
+       <div class="col-lg-6 col-sm-6  my-3 d-flex grip " style="margin: auto;">
+         <div class="card  rounded-3 text-center h-100 mycard2 w-50" style="width:'18rem';box-shadow:'5px 5px 5px gray'">
+                <h5 class="card-title  mt-1 fw-bolder para">Name: {{x.name}}</h5>
+                <img src="{{url_for('static', filename='images/p2.jpeg')}}" class="card-img-top p-2 rounded-3" style="height:'250px'" alt="" >
+                <div class="card-body">
+                <p class="card-text fw-bold text-black">Accepted: {{x.accepted}} </p>
+                <a class="btn btn-primary" type="submit" href="{{url_for('index')}}">back to all products</a>
+            </div>
+         </div>
+     </div>
+  
+{% endmacro %}

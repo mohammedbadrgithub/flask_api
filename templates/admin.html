@@ -1,0 +1,12 @@
+{% extends 'base.html'%}
+{% block content %}
+
+  <div class="col-md-12">
+        <div class="w-100 mt-2 ms-5 ">
+            {% for x in admin %}
+            <h3>{{x}}:{{admin[x]}}</h3>
+            {% endfor %}
+        </div>
+  
+  </div>
+{%endblock content%}
